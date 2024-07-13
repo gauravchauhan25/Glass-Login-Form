@@ -248,7 +248,7 @@ aside .navigation .btnLogin-popup:hover {
       }
 
       .menu-bar {
-            display: block;
+            display: none;
       }
 
       aside {
@@ -319,7 +319,7 @@ aside .navigation .btnLogin-popup:hover {
       .menu-bar {
             right: 1.5rem;
             font-size: 1.4rem;
-            display: block;
+            display: none;
       }
 
       aside {
