@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Glass Log In Form</title>
+      
+      <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+      <header>
+            <h2 class="logo">Maharaja Surajmal Institute</h2>
+            <span class="menu-bar" id="menu-btn">menu</span>
+
+            <aside>
+                  <nav class="navigation">
+                        <span class="close" id="close-btn">X</span>
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+      
+                        <button class="btnLogin-popup" href="index.php">Log In</button>
+                  </nav>
+            </aside>
+      </header>
+
+      <div class="wrapper">
+            <div class="form-box login">
+                  
+                  <form action="login.php" method="post">
+                        <div class="container-fluid" style="text-align: center;">
+                              <img src="msi.png" alt="MSI" width="100" height="100"><br />
+                        </div>
+                        
+                        <h2>Please log in</h2>
+
+                        <div class="input-box" >
+                              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                              <input type="email" name="email" id="email" required>
+                              <label>Email address</label>
+                        </div>
+
+                        <div class="input-box">
+                              <span class="icon">
+                                    <ion-icon name="lock-closed"></ion-icon>
+                              </span>
+                              <input type="password" name="password"  id="password" required>
+                              <label>Password</label>
+                        </div>
+
+                        <p class="register">Don't have a account?
+                              <a href="hostel.php" >Register</a>
+                        </p><br>
+
+                        <button class="loginBtn" type="submit" action="submit()">Log
+                              in</button><br><br>
+
+                        <div class="remember-forgot">
+                              <a href="forgot_password.php">Forgot Password?</a>
+                        </div>
+                        <br><br>
+                  </form>
+            </div>
+      </div>
+
+      <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> -->
+      <script src="script.js"></script>
+</body>
+
+</html>
