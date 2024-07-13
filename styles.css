@@ -248,7 +248,7 @@ aside .navigation .btnLogin-popup:hover {
       }
 
       .menu-bar {
-            display: none;
+            display: block;
       }
 
       aside {
@@ -265,7 +265,7 @@ aside .navigation .btnLogin-popup:hover {
             overflow: scroll;
             overflow-x: hidden;
             animation: showMenu 800ms ease;
-            /* display: none; */
+            display: none;
       }
 
       aside .navigation {
@@ -319,7 +319,7 @@ aside .navigation .btnLogin-popup:hover {
       .menu-bar {
             right: 1.5rem;
             font-size: 1.4rem;
-            display: none;
+            display: block;
       }
 
       aside {
