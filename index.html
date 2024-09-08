@@ -93,6 +93,25 @@
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
       </script>
+
+      <script>
+  // Import Firebase Authentication and Google Auth Provider
+  import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+
+  const auth = getAuth();
+  const provider = new GoogleAuthProvider();
+
+  document.getElementById('googleSignInBtn').addEventListener('click', function() {
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        const user = result.user;
+        console.log("User signed in: ", user);
+      })
+      .catch((error) => {
+        console.error("Error signing in: ", error);
+      });
+  });
+      </script>
 </body>
 
 </html>
