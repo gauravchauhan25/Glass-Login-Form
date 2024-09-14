@@ -116,7 +116,13 @@
       <script src="https://cdn.jsdelivr.net/npm/appwrite@16.0.0"></script>
 <script>
     const { Client } = Appwrite;
+      const client = new Client();
+
+client
+    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setProject('66e1109a00206507bd07');
 </script>
+      
 </body>
 
 </html>
